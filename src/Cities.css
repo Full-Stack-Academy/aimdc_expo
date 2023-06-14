@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cities-container {
+    padding-top: 20px;
+    border: 2px solid gray;
+    padding: 20px;
+    background-color: #131d32;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cities-container h1,
+.cities-container h2,
+.cities-container p {
+    color: white;
+}
+
+.cities-title{
+    text-align: center;
+}
+
+.cities-p1{
+    text-align: center;
+}
+
+.cities-p2 {
+    text-align: center;
+}
+
+.cities-p3 {
+    text-align: center;
+}
+
+.cities-p4 {
+    text-align: center;
+}
+
+.cities-p5 {
+    text-align: center;
+}
+
+.cities-container p {
+    font-size: 20px;
+}
+
+.cities-d1 {
+    text-align: center;
+}
+
+.cities-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cities-floorplan {
+    margin: 7px;
+    overflow: hidden;
+}
+
+.cities-floorplan img {
+    border: 2px solid gray;
+    width: 100%;
+    height: auto;
+}
+
+img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.cities-listdiv {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.cities-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.cities-list li {
+    padding: 5px 0;
+}
+
+.cities-char {
+    border: 2px solid gray;
+    border-radius: 4px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.cities-six {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.cities-three {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.cities-three img {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.cities-and {
+    color: darkcyan;
+}
+
+.cities-E {
+    color: fuchsia;
+}
+
+.cities-X {
+    color: orange;
+}
+
+.cities-P {
+    color: darkcyan;
+}
+
+.cities-o {
+    color: white;
+}
+
+@media (max-width: 868px) {
+    .cities-main {
+        flex-direction: column-reverse;
+    }
+
+    .cities-char img,
+    .cities-six img,
+    .cities-three img {
+        width: 100%;
+    }
+}

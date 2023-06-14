@@ -1,0 +1,149 @@
+/* Styles for the slides and slide content */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Palanquin', sans-serif;
+}
+
+.rootCarousel {
+    background-color: #131d32;
+    padding: 1px;
+}
+
+/* Styles for the slides and slide content */
+.slide {
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+    min-height: 450px;
+    justify-content: center;
+    /* Center the content vertically */
+}
+
+.content {
+
+    border: 2px solid gray;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+    min-height: 500px;
+    /* Reduce the height by 50px */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Space the content evenly from top to bottom */
+    align-items: center;
+    /* Center the content horizontally */
+    text-align: center;
+    /* Center the text inside the content */
+    min-width: 300px;
+    /* Add a minimum width to ensure content is wide enough */
+}
+
+.content h2 {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.content p {
+    flex-grow: 1;
+    color: white;
+    text-align: start;
+}
+
+.citydetails {
+    border: 2px solid gray;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    /* Add box shadow for a card-like appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.citydetails img{
+    max-height: 320px;
+    max-width: 320px;
+}
+
+.event-details {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 10px;
+}
+
+.event-details div {
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    text-align: start;
+}
+
+.learn-more {
+    align-self: center;
+    display: inline-block;
+    padding: 10px;
+    background-color: #0059b8;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a:hover {
+    background-color: #003c7b;
+    cursor: pointer;
+}
+
+/* Styles for the page indicator and dots */
+.page-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #ffffff2f;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ece2cd;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .slide {
+        flex-direction: column;
+        /* Stack the content vertically on smaller screens */
+        align-items: center;
+        /* Center the content horizontally */
+    }
+
+    .content {
+        min-width: unset;
+        /* Remove the minimum width on smaller screens */
+        width: 100%;
+        /* Set the width to 100% on smaller screens */
+        margin: 10px 0;
+    }
+
+    .citydetails {
+        width: 100%;
+        /* Set the width to 100% on smaller screens */
+    }
+}

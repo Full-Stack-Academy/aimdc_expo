@@ -1,0 +1,36 @@
+.features-main-div {
+    display: flex;
+    flex-direction: column;
+    background-color: #27374d;
+}
+
+.features-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    word-spacing: 5px;
+    color: white;
+}
+
+.features-img {
+    margin: 30px;
+}
+
+@media (min-width: 768px) {
+    .features-main-div {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .features-content {
+        width: 50%;
+        margin: 30px;
+    }
+
+    .features-img {
+        margin: 30px;
+        flex-shrink: 0;
+    }
+}

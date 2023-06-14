@@ -1,0 +1,63 @@
+.calendar-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.cal1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.event {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.imgs {
+    margin-bottom: 10px;
+}
+
+.day,
+.month,
+.year {
+    color: #131d32;
+}
+
+.day {
+    font-size: 50px;
+}
+
+.month {
+    margin-left: 50px;
+}
+
+.year {
+    margin-left: 70px;
+}
+
+#h1T {
+    text-align: center;
+    padding: 20px;
+}
+
+.imgs>img {
+    border-radius: 10px;
+}
+
+/* Responsive Styles for Mobile */
+@media only screen and (max-width: 600px) {
+    .cal1 {
+        flex-direction: column;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    .imgs {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

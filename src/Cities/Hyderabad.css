@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sticky-button {
+    position: sticky;
+    top: 200px;
+    right: 20px;
+    z-index: 999;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.cities-container {
+    padding-top: 20px;
+    background-color: rgb(39, 55, 77);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cities-container h1,
+.cities-container h2,
+.cities-container p {
+    color: white;
+}
+
+.cities-title {
+    text-align: center;
+}
+.cities-exhibitor{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cities-partner{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cities-p1,
+.cities-p2,
+.cities-p3,
+.cities-p4 {
+    text-align: center;
+}
+
+.cities-network {
+    text-align: center;
+}
+
+.cities-main {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cities-floorplan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 540px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cities-floorplan img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.cities-listdiv {
+    flex: 1;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.cities-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.cities-list>ul{
+    padding-top: 44px;
+}
+
+.cities-list li {
+    padding: 5px 0;
+}
+
+.cities-list li p{
+    font-size: 16px;
+}
+
+.cities-iconic
+{
+    padding-left: 50px;
+    border-style: none;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cities-iconic img{
+    border: solid gray 0px;
+    border-radius: 10px;
+}
+
+.cities-highlighted {
+    border-style: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cities-highlighted img {
+    border-style: none;
+    border-radius: 4px;
+    max-width: 100%;
+    height: auto;
+}
+
+.cities-six {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.cities-three {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.cities-three img {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.cities-and {
+    color: darkcyan;
+}
+
+.cities-E {
+    color: fuchsia;
+}
+
+.cities-X {
+    color: orange;
+}
+
+.cities-P {
+    color: darkcyan;
+}
+
+.cities-o {
+    color: white;
+}
+
+@media (max-width: 868px) {
+    .cities-main {
+        flex-direction: column-reverse;
+    }
+
+    .cities-char img,
+    .cities-six img,
+    .cities-three img,
+    .cities-floorplan img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cities-container {
+        padding: 10px;
+    }
+
+    .cities-main {
+        flex-direction: column;
+    }
+
+    .cities-listdiv,
+    .cities-iconic,
+    .cities-highlighted,
+    .cities-six,
+    .cities-three {
+        margin: 20px 0;
+    }
+
+    .cities-highlighted img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 868px) {
+    .cities-main {
+        flex-direction: column-reverse;
+    }
+
+    .cities-char img,
+    .cities-six img,
+    .cities-three img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-logoht {
+    width: 140px;
+    /* Increase the width of the image */
+    margin-right: 10px;
+    /* Adjust the right margin */
+    padding: 5px;
+    /* Adjust the padding */
+}
+
+.navbar-contentht {
+    max-width: 1250px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+.navbarht {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.navbarht.navbar-sticky {
+    padding: 10px 0;
+    background: #27374D;
+}
+
+.navbarht .navbar-contentht {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarht .navbar-menu-listht {
+    display: inline-flex;
+}
+
+.navbar-menu-listht li {
+    list-style: none;
+    margin-top: 6px;
+}
+
+.navbar-menu-listht li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+.navbar-menu-listht li a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+.navbar-regiht a {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 25px;
+    padding: 8px;
+    border: 2px solid #9db29f;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.navbar-regiht a:hover {
+    background-color: #9db29f;
+    color: #131d32;
+}
+
+.bannerht {
+    height: 100vh;
+    background: url(src/Image/Hero1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.titleht {
+    position: absolute;
+    top: 30%;
+    left: 8%;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.title2ht {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    font-size: 120px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title3ht {
+    position: absolute;
+    top: 70%;
+    left: 22.5%;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.navbar-icon {
+    color: #9db29f;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-icon.cancel-btnht {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 868px) {
+    .navbar-icon {
+        display: block;
+    }
+
+    .navbar-icon.hide {
+        display: none;
+    }
+
+    .navbarht .navbar-menu-listht {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #27374d;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbarht .navbar-menu-listht.active {
+        left: 0%;
+    }
+
+    .navbarht .navbar-menu-listht.hide {
+        display: none;
+    }
+
+    .navbarht .navbar-menu-listht li {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .navbarht .navbar-menu-listht li a {
+        font-size: 23px;
+    }
+
+    .bannerht {
+        width: 100%;
+    }
+
+    .titleht {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+    }
+
+    .title2ht {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .title3ht {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+    }
+
+
+}

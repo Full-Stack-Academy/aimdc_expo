@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero-bannerht {
+    height: 100vh;
+    background: url(src/Image/Hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-titleht {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+.hero-title2ht {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    font-size: 100px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-title3ht {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.about {
+    padding: 40px 0;
+}
+
+.icon {
+    color: #9db29f;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.icon.cancel-btnht {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 868px) {
+    .icon {
+        display: block;
+    }
+
+    .icon.hide {
+        display: none;
+    }
+
+    .navbarht .menu-listht {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        background: #27374d;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbarht .menu-listht.active {
+        left: 0%;
+    }
+
+    .navbarht .menu-listht.hide {
+        display: none;
+    }
+
+    .navbarht .menu-listht li {
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .navbarht .menu-listht li a {
+        font-size: 23px;
+    }
+
+    .hero-bannerht {
+        width: 100%;
+    }
+
+    .hero-titleht {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+    }
+
+    .hero-title2ht {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .hero-title3ht {
+        position: absolute;
+        top: 50%;
+        left: 4%;
+        font-size: 40px;
+        text-align: center;
+        color: #fff;
+    }
+}

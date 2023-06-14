@@ -1,0 +1,71 @@
+.cal1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date {
+    margin-left: 150px;
+    flex: 1 0 150px;
+    text-align: center;
+}
+
+.location {
+    margin-left: 150px;
+    padding-top: 50px;
+    flex: 1 0 200px;
+}
+
+#h1T {
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imgs {
+    margin-left: 50px;
+    flex: 1 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+.day,
+.month,
+.year {
+    color: #131d32;
+}
+
+.day {
+    font-size: 50px;
+}
+
+.month {
+    margin-left: 50px;
+}
+
+.year {
+    margin-left: 70px;
+}
+
+.imgs>img {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .cal1 {
+        flex-direction: column;
+    }
+
+    .imgs {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .date,
+    .location {
+        margin-left: 0;
+        text-align: center;
+    }
+}
