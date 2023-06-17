@@ -31,7 +31,7 @@ export default function Navbar() {
       <div className="navbar-contentht">
         <div className="logoht">
           <a href="#">
-            <img src="src\Image\logo.png" className="navbar-logoht" />
+            <img src={logo} className="navbar-logoht" />
           </a>
         </div>
 
