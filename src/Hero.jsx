@@ -1,10 +1,12 @@
 import React from 'react';
 import './Navbar.css';
 
+import heroImg from "/Images/Hero1.jpg"
+
 function Hero() {
   return (
     <div>
-      <div className="bannerht"></div>
+      <div className="bannerht" style={{ backgroundImage: `url(${heroImg})` }}></div>
       <div className="titleht">
         <h1>
           <pre> FRANCHISE <br /><span style={{ color: "teal" }}>&</span> DEALERSHIP</pre>

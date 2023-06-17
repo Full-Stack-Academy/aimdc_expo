@@ -1,5 +1,7 @@
 import './AboutUs.css'
 
+import AboutUsImage from "/Images/Expo1.jpg"
+
 function AboutUs() {
     return (
         <div>
@@ -29,7 +31,7 @@ function AboutUs() {
                             </li>
                         </ul>
                     </div>
-                    <div class="aboutimage"><img width={500} src='src\Expo1.jpg' alt="Expo Image" /></div>
+                    <div class="aboutimage"><img width={500} src={AboutUsImage} alt="Expo Image" /></div>
                 </div>
             </section>
         </div>

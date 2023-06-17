@@ -84,7 +84,6 @@
 
 .bannerht {
     height: 100vh;
-    background: url(src/Image/Hero1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
