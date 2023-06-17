@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import logo from "src\Image\logo.png"
 
 export default function Navbar() {
   function clickHandler() {
@@ -30,7 +31,7 @@ export default function Navbar() {
             <div className="navbar-contentht">
                 <div className="logoht">
                     <a href="#">
-                        <img src="src\Image\logo.png" className="navbar-logoht" />
+                        <img src={logo} className="navbar-logoht" />
                     </a>
                 </div>
 
