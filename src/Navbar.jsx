@@ -1,8 +1,7 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
-import logo from "./Image/logo.png";
-import "./Navbar.css";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
 
 export default function Navbar() {
   function clickHandler() {
@@ -26,14 +25,15 @@ export default function Navbar() {
 
   window.addEventListener("scroll", changeBackground);
 
-  return (
-    <div className="navbarht">
-      <div className="navbar-contentht">
-        <div className="logoht">
-          <a href="#">
-            <img src={logo} className="navbar-logoht" />
-          </a>
-        </div>
+    return (
+        <div className="navbarht">
+            <div className="navbar-contentht">
+                <div className="logoht">
+                    <a href="#">
+                        <img src="src\Image\logo.png" className="navbar-logoht" />
+                    </a>
+                </div>
+
 
         <ul className="navbar-menu-listht">
           <div className="navbar-icon cancel-btnht" onClick={cancelbtn}>

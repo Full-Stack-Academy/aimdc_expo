@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import Carousel from '../Carousel';
+
+import HyderabadFloorPlan from "/Images/floor plan.jpeg"
+import HyderabadTraders from "/Images/placeholder.jpeg"
 import './Hyderabad.css';
 
 function Hyderabad(props) {
@@ -44,7 +46,7 @@ function Hyderabad(props) {
             </div>
             <div className="cities-floorplan">
                 <img
-                    src="src\Image\floor plan.jpeg"
+                    src={HyderabadFloorPlan}
                     alt="Floor Plan"
                 />
             </div>
@@ -88,24 +90,24 @@ function Hyderabad(props) {
                 <h1>Our Exhibitors</h1>
             </div>
             <div className="cities-six">
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
             </div>
             <div className="cities-six">
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
             </div>
             <div className="cities-partner">
                 <h1>Our Partners</h1>
             </div>
             <div className="cities-three">
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
+                <img src={HyderabadTraders} alt="Placeholder" />
             </div>
         </div>
     );
