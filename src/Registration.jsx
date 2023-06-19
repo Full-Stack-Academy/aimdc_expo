@@ -1,64 +1,98 @@
 import { useState } from 'react';
 import './Registration.css';
-
-import regImg from "/Images/Expo1.jpg"
+import RegBackImg from "/Images/bg2.jpg"
 
 function Registration() {
+
     const [option, setOption] = useState();
 
-    return (
-        <div>
-            <form className='Registration-regForm' action="" style={{ backgroundImage: `url(${regImg})` }} >
-                <div className='Registration-formBorder'>
-                    <h2 id='Registration-regh2'>Register Now</h2>
-                    <hr style={{ color: "gray" }} />
-                    <div >
-                        <select className='Registration-select'>
-                            <option value="" disabled selected>select city</option>
-                            <option value="Bangalore">Bangalore</option>
-                            <option value="Hyderabad">Chennai</option>
-                            <option value="Chennai">Hyderabad</option>
-                            <option value="Kochi">Kochi</option>
-                            <option value="Mumbai">Mumbai</option>
-                        </select>
 
-                        <div className='Registration-regType'>
-                            <div>
-                                <input id='radio_selection'  type="radio" value="Visitor" name="abc" onChange={(e) => setOption(e.target.value)} />Visitor
+    return (
+
+
+        <div id='regNow'>
+
+            <div className="regForm" style={{ backgroundImage: `url(${RegBackImg})` }}>
+
+                <div className="form">
+                    <h1 id="regNow">Register Now</h1> <hr id="hr" />
+                    <div className="input">
+                        <div className="dropDown">
+
+                            <select className='selectCity' required>
+                                <option value="" disabled selected>select city</option>
+                                <option value="Bangalore">Bangalore</option>
+                                <option value="Hyderabad">Chennai</option>
+                                <option value="Chennai">Hyderabad</option>
+                                <option value="Kochi">Kochi</option>
+                                <option value="Mumbai">Mumbai</option>
+                            </select>
+                        </div>
+                        <div className='regAs'>
+                            <div id='vis'>
+                                <input id='vi' type="radio" value="Visitor" name="abc" onChange={(e) => setOption(e.target.value)} /><label for="vi">Visitor</label>
                             </div>
-                            <div>
-                                <input id='radio_selection'  type="radio" name="abc" value="Exhibitor" onChange={(e) => setOption(e.target.value)} />Exhibitor
+                            <div id='exh'>
+                                <input id='ex' type="radio" name="abc" value="Exhibitor" onChange={(e) => setOption(e.target.value)} /> <label for="ex">Exhibitor</label>
                             </div>
                         </div>
+
+
+
+                        {/* // <div class="inputField"> */}
 
                         {
-                            (option === 'Visitor') ? (
+
+                            option === 'Visitor' ?
+
                                 <>
-                                    <input type="email" placeholder="Enter full name" className='Registration-input' />
-                                    <input type="email" placeholder="Enter your email" className='Registration-input' />
-                                    <input type="text" placeholder="Enter contact number" className='Registration-input' />
-                                    <input type="text" placeholder="Enter your city" className='Registration-input' />
+                                    <div>
+                                        <input className="Visitor" type="text" placeholder="Enter your full name" required />
+                                    </div>
+                                    <div>
+                                        <input className="Visitor" type="text" placeholder="Enter your contact" required />
+                                    </div>
+                                    <div>
+                                        <input className="Visitor" type="email" placeholder="Enter your email" required />
+                                    </div>
+                                    <div>
+                                        <input className="Visitor" type="email" placeholder="Enter your city" required />
+                                    </div>
                                 </>
-                            ) : (
+                                :
                                 <>
-                                    <input type="text" placeholder="Enter full name" className='Registration-input' />
-                                    <input type="text" placeholder="Enter company name" className='Registration-input' />
-                                    <input type="email" placeholder="Enter your email" className='Registration-input' />
-                                    <input type="text" placeholder="Enter contact number" className='Registration-input' />
-                                    <input type="text" placeholder="Enter your city" className='Registration-input' />
+                                    <div>
+                                        <input className="Exhibitor" type="text" placeholder="Enter your full name" required />
+                                    </div>
+                                    <div>
+                                        <input className="Exhibitor" type="text" placeholder="Enter company name" required />
+                                    </div>
+                                    <div>
+                                        <input className="Exhibitor" type="text" placeholder="Enter your contact" required />
+                                    </div>
+                                    <div>
+                                        <input className="Exhibitor" type="email" placeholder="Enter your email" required />
+                                    </div>
+                                    <div>
+                                        <input className="Exhibitor" type="email" placeholder="Enter your city" required />
+                                    </div>
                                 </>
-                            )
+
                         }
 
-                        <div className='Registration-buttons'>
-                            <button id='Registration-clrbtn'>Clear</button>
-                            <button id='Registration-sbtbtn'>Submit</button>
+                        <div className="btn">
+                            <button className="btns">Clear</button>
+                            <button className="btns">Submit</button>
                         </div>
                     </div>
+
                 </div>
-            </form>
+
+            </div>
+
         </div>
-    );
+
+    )
 }
 
 export default Registration;

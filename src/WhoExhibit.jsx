@@ -31,7 +31,7 @@ import Sports from "/Images/Sport and Leisure.png"
 function WhoExhibit()
 {
     return(
-        <div>
+        <div id='who'>
             <div id='who' class="root">
                 <h2 class="TopTitle">WHO EXHIBIT</h2>
                 <div class="Box-Container">

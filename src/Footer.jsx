@@ -2,7 +2,7 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <div>
+        <div id='foot'>
             <div className="containerfooter">
                 <div className="row">
                     <div className="footer-links">

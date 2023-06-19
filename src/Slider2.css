@@ -12,61 +12,15 @@
 }
 
 /* Styles for the slides and slide content */
-/* Styles for the slides and slide content */
 .slide {
     display: flex;
     margin-top: 20px;
     padding: 10px;
-    min-height: 400px;
-    min-width: 500px;
+    min-height: 350px;
     justify-content: center;
     /* Center the content vertically */
-    flex-grow: 1;
-    /* Added */
 }
 
-.cityCard{
-    width: 100%;
-    height: 100%;
-}
-
-.content {
-    border: 2px solid gray;
-    border-radius: 4px;
-    margin: 10px;
-    padding: 10px;
-    min-height: 500px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    min-width: 300px;
-    transition: all 0.3s ease;
-    width: 75%;
-}
-
-.content:hover {
-    border: solid white 1px;
-    border-radius: 4px;
-    margin: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.content h2 {
-    font-family: 'Palanquin', sans-serif;
-    font-size: 36px;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.content p {
-    flex-grow: 1;
-    color: white;
-    text-align: start;
-}
 
 .citydetails {
     /* border: 2px solid gray; */
@@ -135,27 +89,4 @@ a:hover {
 
 .dot.active {
     background-color: #ece2cd;
-}
-
-/* Responsive styles */
-@media (max-width: 768px) {
-    .slide {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content {
-        min-width: unset;
-        width: 90%;
-        margin: 10px 0;
-    }
-
-    .content p {
-        text-align: center;
-    }
-
-    .citydetails img {
-        max-height: 250px;
-        max-width: 250px;
-    }
 }

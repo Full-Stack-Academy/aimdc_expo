@@ -2,7 +2,7 @@ import './Calender.css'
 
 function Calander() {
     return (
-        <div>
+        <div id='cal'>
             <h1 id='h1T'>UPCOMING EVENTS 2023-2024</h1>
             <hr />
             <div className="cal1">

@@ -1,104 +1,96 @@
-
-
-.Registration-regForm {
+.regForm {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.8;
-    color: black;
-    font-size: 15px;
+    background-position: center;
+
 }
 
-#Registration-regh2 {
+.form {
     text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    min-height: auto;
+    margin: 13px;
+}
+
+#regNow {
     color: #1a88b2;
 }
 
-.Registration-formBorder {
-    border: 2px solid gray;
-    border-radius: 10px;
-    margin: 20px auto;
+#hr {
+    color: lightgray;
     padding-bottom: 20px;
-    background-color: white;
-    min-height: 620px;
-    width: 650px;
 }
 
-.Registration-formBorder h2{
-    padding: 15px;
-    text-align: center;
+.selectCity {
+    padding: 7px 200px 7px 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-button {
-    background-color: #1a88b2;
+.selectCity:hover {
+    box-shadow: 1px 1px 3px 3px skyblue;
+}
+
+.regAs {
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.Visitor {
+    padding: 8px 125px 8px 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.Visitor:hover {
+    box-shadow: 1px 1px 3px 3px skyblue;
+}
+
+.Exhibitor {
+    padding: 8px 125px 8px 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.Exhibitor:hover {
+    box-shadow: 1px 1px 3px 3px skyblue;
+}
+
+.btn {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+.btns {
+    padding: 6px 30px;
+    border: transparent;
     border-radius: 10px;
-    border: 1px solid #131d32;
-    padding: 8px 30px;
-    margin: 30px 10px 0 0;
+    background-color: #1a88b2;
     font-size: 20px;
 }
 
-button:hover {
+.btns:hover {
     color: white;
-}
-
-.Registration-buttons {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 60px;
-}
-
-.Registration-regType {
-    display: flex;
-    padding: 20px 62px 11px;
-    gap: 50px;
-}
-
-#radio_selection{
-    margin-right: 10px;
-}
-
-.Registration-select{
-    text-align: center;
-    align-items:center ;
-    padding: 8px 377px 8px 10px;
-    margin: 20px 0px 0px 60px;
-    font-size: 15px;
-    border-color: gray;
-    border-radius: 6px;
-}
-
-.Registration-input {
-    padding: 5px 330px 5px 8px;
-    margin: 20px 0 0 60px;
-    font-size: 15px;
-    border-color: gray;
-    border-radius: 6px;
-}
-
-@media (max-width: 768px) {
-    .Registration-formBorder {
-        width: 90%;
-        max-width: 400px;
-        margin: 20px auto;
-        min-height: auto;
-        padding-bottom: 0;
-    }
-
-    .Registration-select,
-    .Registration-input {
-        width: 100%;
-        padding: 10px 8px;
-        margin: 10px 0;
-    }
-
-    .Registration-regType {
-        flex-direction: column;
-        gap: 8px;
-        padding: 5px 20px;
-    }
-
-    .Registration-buttons {
-        justify-content: center;
-        margin: 20px 0;
-    }
+    font-size: 25px;
 }

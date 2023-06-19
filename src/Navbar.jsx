@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import NavbarDisplayImage from "/Images/logo.png"
@@ -39,12 +40,12 @@ export default function Navbar() {
 
                 <ul className="navbar-menu-listht">
                     <div className="navbar-icon cancel-btnht" onClick={cancelbtn}><FontAwesomeIcon icon={faXmark} /></div>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#who">Who Exhibits</a></li>
-                    <li><a href="#cal">Expo Calendar</a></li>
-                    <li><a href="#foot">Contact</a></li>
-                    <div className='navbar-regiht'><a href="#regNow">Register Now</a></div>
+                    <li><Link to="home" spy={true} smooth={true} duration={500} onClick={cancelbtn}>Home </Link></li>
+                    <li><Link to="about" spy={true} smooth={true} duration={500} onClick={cancelbtn}>About</Link></li>
+                    <li><Link to="who" spy={true} smooth={true} duration={500} onClick={cancelbtn}>Who Exhibits</Link></li>
+                    <li><Link to="cal" spy={true} smooth={true} duration={500} onClick={cancelbtn}>Expo Calendar</Link></li>
+                    <li><Link to="foot" spy={true} smooth={true} duration={500} onClick={cancelbtn}>Contact</Link></li>
+                    <div className='navbar-regiht'><Link to="regNow" spy={true} smooth={true} duration={500} onClick={cancelbtn}>Register Now</Link></div>
                 </ul>
 
                 <div className="navbar-icon menu-btnht" onClick={clickHandler}><FontAwesomeIcon icon={faBars} /></div>

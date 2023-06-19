@@ -5,7 +5,7 @@ import heroImg from "/Images/Hero1.jpg"
 
 function Hero() {
   return (
-    <div>
+    <div id='home'>
       <div className="bannerht" style={{ backgroundImage: `url(${heroImg})` }}></div>
       <div className="titleht">
         <h1>
