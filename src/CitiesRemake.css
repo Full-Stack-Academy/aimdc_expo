@@ -22,33 +22,6 @@
     text-align: center;
 }
 
-.cities-and{
-    color: #008B8B;
-}
-
-.cities-E{
-    color:#FF00FF ;
-}
-
-.cities-X{
-        color:#FFA500 ;
-    }
-
-.cities-P{
-        color: #008B8B;
-    }
-
-.cities-O{
-        color:#fff ;
-    }
-
-.cities-description{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-
 .floorplan-image-container {
     width: 75vw;
     max-width: 100%;

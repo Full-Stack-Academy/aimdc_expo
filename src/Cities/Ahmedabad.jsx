@@ -1,126 +1,95 @@
-import React from "react";
-import "./Ahmedabad.css";
+import React from 'react';
+import './Hyderabad.css';
+import HyderabadFloorPlan from "/Images/floor plan.jpeg";
+import ExhibitorsPlaceholder from "/Images/Placeholder.png";
 
-function Ahmedabad(props) {
-
-    {/*---------------------------------------------------------------------------------------------------------------------*/ }
-    const [cityStatus, setcityStatus] = useState(true);
-
-    const cityClose = () => {
-        setcityStatus(false)
-        // console.log("##################"+cityStatus)
-    }
-    props.collapseAhmedabad(cityStatus);
-    {/*-----------------------------------------------------------------------------------------------------------------------*/ }
-
+const Ahmedabad = () => {
     return (
-        <div id={props.id} className="cities-container">
+        <div className='cities-remake-container'>
+            <div className="cities-container">
+                <div className="cities-header">
+                    <div className="cities-title">
+                        <h1>
+                            FRANCHISE <span className="cities-and">&</span> DEALERSHIP
+                            <div className="cities-expo">
+                                <span className="cities-E">E</span>
+                                <span className="cities-X">X</span>
+                                <span className="cities-P">P</span>
+                                <span className="cities-O">O</span>
+                            </div>{" "}
+                            <div>2023-2024</div>
+                        </h1>
+                    </div>
 
-            <button onClick={cityClose} className="sticky-button">X</button>
-            <div className="cities-header">
-                <div className="cities-title">
-                    <h1>
-                        FRANCHISE <span className="cities-and">&</span> DEALERSHIP
-                        <div className="cities-expo">
-                            <span className="cities-E">E</span>
-                            <span className="cities-X">X</span>
-                            <span className="cities-P">P</span>
-                            <span className="cities-o">O</span>
-                        </div>{" "}
-                        <div>2023-2024</div>
-                    </h1>
-                </div>
-                <div className="cities-description">
-                    <p className="cities-p1">
-                        Is a platform for Entrepreneurs and Business ownership to Explore Various
-                    </p>
-                    <p className="cities-p2">
-                        Franchises and Dealership Opportunities and build Their Business by partnering with Established Brands.
-                    </p>
-                    <h2 className="cities-discover">Discover</h2>
-                    <p className="cities-p3">
-                        Discover Marketing and Branding Resources to help you Promote your Franchise or Dealership.
-                    </p>
-                    <h2 className="cities-network">Network & Connect</h2>
-                    <p className="cities-p4">
-                        Network with Potential Partners, Mentors, and Investors to help Grow your Business.
-                    </p>
-                    <p className="cities-p5">
-                        Connect with Industry Experts, Successful Franchise and Dealership Owners, and fellow Entrepreneurs.
-                    </p>
-                </div>
-            </div>
-            <div className="cities-floorplan">
-                <img
-                    src="src\Image\floor plan.jpeg"
-                    alt="Floor Plan"
-                />
-            </div>
-            <div className="cities-main">
-                <div className="cities-listdiv">
-                    <h2>Details About Ahmedabad</h2>
-                    <div className="cities-list">
-                        <ul>
-                            <li>
-                                <p>
-                                    Ahmedabad is the largest city in the state of Gujarat, India. It is known for its vibrant culture, rich history, and architectural heritage.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    The city offers a favorable business environment and has emerged as a major industrial and commercial hub. It is renowned for its textile, pharmaceutical, and chemical industries.
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Ahmedabad is home to iconic landmarks such as the Sabarmati Ashram, Sidi Saiyyed Mosque, and Adalaj Stepwell, which showcase the city's cultural and architectural diversity.
-                                </p>
-                            </li>
-                        </ul>
+                    <div className="cities-description">
+                        <h1 className="cities-discover">Discover</h1>
+                        <p className="cities-p1">
+                            Is a platform for Entrepreneurs and Business ownership to Explore Various
+                        </p>
+                        <p className="cities-p2">
+                            Franchises and Dealership Opportunities and build Their Business by partnering with Established Brands.
+                        </p>
+                        <h1 className="cities-network">Network & Connect</h1>
+                        <p className="cities-p3">
+                            Network with Potential Partners, Mentors, and Investors to help Grow your Business.
+                        </p>
+                        <p className="cities-p4">
+                            Connect with Industry Experts, Successful Franchise and Dealership Owners, and fellow Entrepreneurs.
+                        </p>
+                    </div>
+
+                    <div className="floorplan-image-container">
+                        <img src={HyderabadFloorPlan} alt="Image" />
+                    </div>
+
+                    <div className='city-details'>
+                        <div className='city-details-list'>
+                            <h2>Details about Ahmedabad</h2>
+                            <ul>
+                                <li>
+                                    Ahmedabad is the industrial center in India after Mumbai.
+                                </li>
+                                <li>
+                                    The GDP of Ahmedabad was found to be $186 billion in 2020.
+                                </li>
+                                <li>
+                                    Its main Industries are chemicals, textiles, manufacturing, drugs and pharmaceuticals.
+                                </li>
+                            </ul>
+                        </div>
+                        <div className='city-details-image'>
+                            <img src="https://media.istockphoto.com/id/1427533039/photo/drone-shot-of-buildings-in-the-financial-district.jpg?s=612x612&w=0&k=20&c=lhCbJmK4OhnswMCwPELEht1OQM2i0Qi67sVsl637tAc=" alt="Ahmedabad" />
+                        </div>
+                    </div>
+
+                    <div className='Exhibitors-and-Partners'>
+                        <h2>Our Exhibitors</h2>
+                        <div className='Exhibitors-Images'>
+                            <div className='Image-Row'>
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            </div>
+                            <div className='Image-Row'>
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            </div>
+                        </div>
+                        <h2>Our Partners</h2>
+                        <div className='Partners-Images'>
+                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                        </div>
                     </div>
                 </div>
-                <div className="cities-iconic">
-                    <img
-                        src="https://media.istockphoto.com/id/1322194536/photo/sabarmati-riverfront-aerial-view-ahmedabad.jpg?s=612x612&w=0&k=20&c=G8qSUp_FeJzB4Tq1vd02NGGSvUC-pI_PSb_z7ELdXAI="
-                        alt="Ahmedabad"
-                    />
-                </div>
-            </div>
-            <div className="cities-highlighted">
-                <img
-                    src="https://media.istockphoto.com/id/1055406966/vector/high-quality-map-city-of-india.jpg?s=612x612&w=0&k=20&c=LKnmGho9BSNrQjKJWUxknv1KNQTG4QIUpz4MQbclLZk="
-                    alt="India Map"
-                />
-            </div>
-            <div className="cities-exhibitor">
-                <h1>Our Exhibitors</h1>
-            </div>
-            <div className="cities-six">
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-            </div>
-            <div className="cities-six">
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-            </div>
-            <div className="cities-partner">
-                <h1>Our Partners</h1>
-            </div>
-            <div className="cities-three">
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
-                <img src="src\Image\placeholder.jpeg" alt="Placeholder" />
             </div>
         </div>
     );
-}
+};
 
 export default Ahmedabad;

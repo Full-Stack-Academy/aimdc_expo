@@ -1,12 +1,13 @@
 import Navbar from './Navbar'
 import Hero from './Hero'
 import AboutUs from './AboutUs'
-import Slider from './Slider'
+import SliderConditional from './SliderConditional'
 import WhoExhibit from './WhoExhibit'
 import Features from './Features'
 import Calander from './Calender'
 import Registration from './Registration'
 import Footer from './Footer'
+import CitiesRemake from './CitiesRemake'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
-      <Slider/>
+      <SliderConditional/>
       <AboutUs/>
       <WhoExhibit/>
       <Features/>

@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import './Registration.css';
 
+import regImg from "/Images/Expo1.jpg"
+
 function Registration() {
     const [option, setOption] = useState();
 
     return (
         <div>
-            <form className='Registration-regForm' action="">
+            <form className='Registration-regForm' action="" style={{ backgroundImage: `url(${regImg})` }} >
                 <div className='Registration-formBorder'>
                     <h2 id='Registration-regh2'>Register Now</h2>
                     <hr style={{ color: "gray" }} />

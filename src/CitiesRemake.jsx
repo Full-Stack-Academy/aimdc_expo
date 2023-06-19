@@ -1,9 +1,9 @@
 import React from 'react';
-import './Hyderabad.css';
+import './CitiesRemake.css';
 import HyderabadFloorPlan from "/Images/floor plan.jpeg";
-import ExhibitorsPlaceholder from "/Images/Placeholder.png";
+import HyderabadExhibitorsPlaceholder from "/Images/Placeholder.png";
 
-const Hyderabad = () => {
+const CitiesRemake = () => {
     return (
         <div className='cities-remake-container'>
             <div className="cities-container">
@@ -15,21 +15,21 @@ const Hyderabad = () => {
                                 <span className="cities-E">E</span>
                                 <span className="cities-X">X</span>
                                 <span className="cities-P">P</span>
-                                <span className="cities-O">O</span>
+                                <span className="cities-o">O</span>
                             </div>{" "}
                             <div>2023-2024</div>
                         </h1>
+                        <h2 className="cities-discover">Discover</h2>
                     </div>
 
                     <div className="cities-description">
-                        <h1 className="cities-discover">Discover</h1>
                         <p className="cities-p1">
                             Is a platform for Entrepreneurs and Business ownership to Explore Various
                         </p>
                         <p className="cities-p2">
                             Franchises and Dealership Opportunities and build Their Business by partnering with Established Brands.
                         </p>
-                        <h1 className="cities-network">Network & Connect</h1>
+                        <h2 className="cities-network">Network & Connect</h2>
                         <p className="cities-p3">
                             Network with Potential Partners, Mentors, and Investors to help Grow your Business.
                         </p>
@@ -66,24 +66,24 @@ const Hyderabad = () => {
                         <h2>Our Exhibitors</h2>
                         <div className='Exhibitors-Images'>
                             <div className='Image-Row'>
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
                             </div>
                             <div className='Image-Row'>
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                                <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                                <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
                             </div>
                         </div>
                         <h2>Our Partners</h2>
                         <div className='Partners-Images'>
-                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
-                            <img src={ExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
+                            <img src={HyderabadExhibitorsPlaceholder} alt='Exhibitor-Placeholder' />
                         </div>
                     </div>
                 </div>
@@ -92,4 +92,4 @@ const Hyderabad = () => {
     );
 };
 
-export default Hyderabad;
+export default CitiesRemake;

@@ -18,7 +18,7 @@ import ChennaiIcon from './Icon/Chennai.png';
 import LucknowIcon from './Icon/Lucknow.png';
 import JaipurIcon from './Icon/Jaipur.png';
 
-function Slider({ interval = 45000 }) {
+function Slider2({ interval = 45000 }) {
     const [slideIndex, setSlideIndex] = useState(0);
 
     useEffect(() => {
@@ -28,8 +28,7 @@ function Slider({ interval = 45000 }) {
         return () => clearInterval(timer);
     }, [interval]);
 
-
-    {/*--------------------------------------------------------------------------------------------------------------------------------------*/}
+    {/*--------------------------------------------------------------------------------------------------------------------------------------*/ }
     {/*City Block State for Rendering*/ }
     const [showComponentMumbai, setShowComponentMumbai] = useState(false);
 
@@ -37,7 +36,7 @@ function Slider({ interval = 45000 }) {
     {/*Hyderabad City Block State for Rendering*/ }
     const handleClickMumbai = () => {
         console.log("###############################" + showComponentMumbai)
-    
+
         setShowComponentMumbai(!showComponentMumbai);
         console.log("Mum STATE" + showComponentMumbai);
     }
@@ -122,23 +121,47 @@ function Slider({ interval = 45000 }) {
                 {/* Render the slides */}
                 <div className="slide" style={{ display: slideIndex === 0 ? 'flex' : 'none' }}>
 
-                    <Place name="Hyderabad" src={HyderabadIcon} date="25-26/Aug/23" action={() => { window.scrollTo(0, 1100); handleClickHyderabad(); handleCityResetHyderabad(); }} />
-
-                    <Place name="Mumbai" src={MumbaiIcon} date="4/11/23 - 5/11/23" action={() => { window.scrollTo(0, 1100); handleClickMumbai(); handleCityResetMumbai(); }} />
-                    <Place name="Bangalore" src={BangaloreIcon} date="25/11/23 - 26/11/23" action={() => { window.scrollTo(0, 1100); handleClickBangalore(); handleCityResetBangalore(); }} />
-                    <Place name="Kochi" src={KochiIcon} date="16/12/23 - 17/12/23" action={() => { window.scrollTo(0, 1100); handleClickKochi(); handleCityResetKochi(); }} />
-                    <Place name="Delhi" src={DelhiIcon} date="TBA" />
+                    <Place className="cityCard" name="Hyderabad" src={HyderabadIcon} date="25-26/Aug/23" action={() => { window.scrollTo(0, 1100); handleClickHyderabad(); handleCityResetHyderabad(); }} />
                 </div>
                 <div className="slide" style={{ display: slideIndex === 1 ? 'flex' : 'none' }}>
-                    <Place name="Jaipur" src={JaipurIcon} date="TBA" />
-                    <Place name="Lucknow" src={KolkataIcon} date="TBA" />
-                    <Place name="Ahemdabad" src={AhemdabadIcon} date="TBA" />
-                    <Place name="Kolkata" src={LucknowIcon} date="TBA" />
-                    <Place name="Chennai" src={ChennaiIcon} date="TBA" />
+
+                    <Place className="cityCard" name="Mumbai" src={MumbaiIcon} date="4/11/23 - 5/11/23" action={() => { window.scrollTo(0, 1100); handleClickMumbai(); handleCityResetMumbai(); }} />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 2 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Bangalore" src={BangaloreIcon} date="25/11/23 - 26/11/23" action={() => { window.scrollTo(0, 1100); handleClickBangalore(); handleCityResetBangalore(); }} />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 3 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Kochi" src={KochiIcon} date="16/12/23 - 17/12/23" action={() => { window.scrollTo(0, 1100); handleClickKochi(); handleCityResetKochi(); }} />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 4 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Delhi" src={DelhiIcon} date="TBA" />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 5 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Jaipur" src={JaipurIcon} date="TBA" />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 6 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Lucknow" src={KolkataIcon} date="TBA" />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 7 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Ahemdabad" src={AhemdabadIcon} date="TBA" />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 8 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Kolkata" src={LucknowIcon} date="TBA" />
+                </div>
+                <div className="slide" style={{ display: slideIndex === 9 ? 'flex' : 'none' }}>
+
+                    <Place className="cityCard" name="Chennai" src={ChennaiIcon} date="TBA" />
                 </div>
                 {/* Render the page indicator */}
                 <div className="page-indicator">
-                    {[...Array(2)].map((_, i) => (
+                    {[...Array(10)].map((_, i) => (
                         <span
                             key={i}
                             className={`dot ${i === slideIndex ? 'active' : ''}`}
@@ -149,8 +172,8 @@ function Slider({ interval = 45000 }) {
             </div>
 
             {/*Cities Element Rendered Here*/}
-            {showComponentHyderabad && <Hyderabad id={"caro"}/>}
-            {showComponentBangalore && <Bangalore id={"caro"}/>}
+            {showComponentHyderabad && <Hyderabad id={"caro"} />}
+            {showComponentBangalore && <Bangalore id={"caro"} />}
             {showComponentKochi && <Kochi id={"caro"} />}
             {showComponentMumbai && <Mumbai id={"caro"} />}
 
@@ -158,4 +181,4 @@ function Slider({ interval = 45000 }) {
     );
 }
 
-export default Slider;
+export default Slider2;
