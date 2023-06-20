@@ -13,8 +13,6 @@ function Registration() {
     return (
 
 
-        <div id='regNow'>
-
             <div className="regForm" style={{ backgroundImage: `url(${RegBackImg})` }}>
 
                 <div className="form">
@@ -93,7 +91,6 @@ function Registration() {
 
             </div>
 
-        </div>
 
     )
 }
