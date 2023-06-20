@@ -2,9 +2,12 @@ import { useState } from 'react';
 import './Registration.css';
 import RegBackImg from "/Images/bg2.jpg"
 
+import regImg from "/Images/Expo1.jpg"
+
 function Registration() {
 
     const [option, setOption] = useState();
+
 
 
     return (

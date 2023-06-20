@@ -1,4 +1,6 @@
+
 import React from 'react';
+
 import './Hyderabad.css';
 import HyderabadFloorPlan from "/Images/floor plan.jpeg";
 import ExhibitorsPlaceholder from "/Images/Placeholder.png";
@@ -47,6 +49,7 @@ const Hyderabad = () => {
                             <h2>Details about Hyderabad</h2>
                             <ul>
                                 <li>
+
                                     Hyderabad is a major city in India known for its thriving industries and economic opportunities. It is particularly renowned for its information technology, pharmaceutical, and biotechnology sectors.
                                 </li>
                                 <li>
@@ -87,6 +90,7 @@ const Hyderabad = () => {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     );

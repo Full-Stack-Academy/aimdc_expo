@@ -6,6 +6,7 @@ import heroImg from "/Images/Hero1.jpg"
 function Hero() {
   return (
     <div id='home'>
+    <div>
       <div className="bannerht" style={{ backgroundImage: `url(${heroImg})` }}></div>
       <div className="titleht">
         <h1>
@@ -21,6 +22,7 @@ function Hero() {
         </h1>
       </div>
       <div className="title3ht"><p>India's Biggest Bussiness Opportunity</p></div>
+    </div>
     </div>
   );
 }

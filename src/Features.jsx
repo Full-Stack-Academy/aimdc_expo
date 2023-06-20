@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Features.css";
 import img_expo2 from "/Images/Expo2.jpg";
@@ -41,6 +42,9 @@ function Features() {
                     <img className="img-rounded" src={img_expo2} alt="" />
                 </div>
             </div>
+
+            {/* <div className="features-img"><img style={{ borderRadius: "20px" }} width={650} height={500} src={img_expo2} alt="" /></div> */}
+            {/* <div class="A2"><img width="600" style="border-radius: 5px;" src="images/expo2.jpg" alt=""></div> */}
         </div>
     );
 }

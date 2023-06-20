@@ -31,7 +31,11 @@ function AboutUs() {
                             </li>
                         </ul>
                     </div>
+
                     <div class="aboutimage"><img src={AboutUsImage} alt="Expo Image" /></div>
+
+                    
+
                 </div>
             </section>
         </div>
