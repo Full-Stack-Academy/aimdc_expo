@@ -51,7 +51,8 @@
 }
 
 .Visitor {
-    padding: 8px 125px 8px 10px;
+    width: 75%;
+    padding: 8px ;
     font-size: 16px;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -62,8 +63,9 @@
     box-shadow: 1px 1px 3px 3px skyblue;
 }
 
-.Exhibitor {
-    padding: 8px 125px 8px 10px;
+.Exhibitor { 
+    width: 75%;
+    padding: 8px ;
     font-size: 16px;
     margin-bottom: 20px;
     border-radius: 5px;
