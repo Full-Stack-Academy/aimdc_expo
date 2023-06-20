@@ -30,8 +30,13 @@
     margin: 24px;
 }
 
+#sel{
+    padding-left: 10px;
+}
+
 .selectCity {
-    padding: 7px 200px 7px 10px;
+    width: 75%;
+    padding: 8px;
     font-size: 18px;
     margin-bottom: 20px;
     border-radius: 5px;

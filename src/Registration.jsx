@@ -31,10 +31,10 @@ function Registration() {
                         </div>
                         <div className='regAs'>
                             <div id='vis'>
-                                <input id='vi' type="radio" value="Visitor" name="abc" onChange={(e) => setOption(e.target.value)} /><label for="vi">Visitor</label>
+                                <input id='vi' type="radio" value="Visitor" name="abc" onChange={(e) => setOption(e.target.value)} /><label id="sel"for="vi">Visitor</label>
                             </div>
                             <div id='exh'>
-                                <input id='ex' type="radio" name="abc" value="Exhibitor" onChange={(e) => setOption(e.target.value)} /> <label for="ex">Exhibitor</label>
+                                <input id='ex' type="radio" name="abc" value="Exhibitor" onChange={(e) => setOption(e.target.value)} /> <label id="sel" for="ex">Exhibitor</label>
                             </div>
                         </div>
 
